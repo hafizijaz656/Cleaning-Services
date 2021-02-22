@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.AccountPropertyActivity">
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/images"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/totalpay_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:hint="$0.0"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/btnPay_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="0.2"
+            android:text="Pay"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly1"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/abc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="12 HIBEN ROAD"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic|bold"
+
+            />
+
+        <EditText
+            android:id="@+id/edtAddress1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:hint="$0"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly2"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/frm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="13 HIBEN ROAD"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/edtAddress2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:hint="$0"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ly3"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/weWork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Service"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/edtService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:hint="$0"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/showProRecord_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/purple_500"
+        android:layout_margin="30dp"
+        android:src="@drawable/preview"
+        android:contentDescription="@string/todo1" />
+
+</RelativeLayout>

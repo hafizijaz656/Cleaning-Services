@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cleaning Services</string>
+
+    <string name="line_of_recycler_card">------------------------------------------------------</string>
+    <string name="todo1">TODO</string>
+    <string name="todo">TODO</string>
+</resources>
